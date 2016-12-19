@@ -34,6 +34,11 @@ describe Day1::Walker do
       4.times { @walker.turn('R') }
       @walker.current_direction.must_equal 'N'
     end
+
+    it 'should turn left 4 times and be facing north' do
+      4.times { @walker.turn('L') }
+      @walker.current_direction.must_equal 'N'
+    end
   end
 
   describe 'Given moves R2, R2, R2' do
